@@ -48,6 +48,11 @@ h3 {
     margin: 0;
     color: var(--color-grey);
 }
+h4 {
+    font: normal normal clamp(12px,4vw, 14px) ShareTechMono;
+    margin: 0;
+    color: var(--color-grey);
+}
 p {
     font: normal normal 16px ZenKakuGothicAntique-Medium;
     max-width: 800px;
@@ -288,6 +293,11 @@ div.sub-ul a:last-child {
     height: 2px;
     background: var(--color-grey);
     align-self: center;
+}
+.hr-right {
+    margin-right: 20px;
+}
+.hr-left {
     margin-left: 20px;
 }
 .title-section {
@@ -328,8 +338,6 @@ div.sub-ul a:last-child {
     flex: 1 1;
     width: 300px;
     height: 320px;
-    background: url('../assets/images/me-image.jpg');
-    background-size: cover;
 }
 .experience-info-container {
     display: flex;
@@ -366,22 +374,10 @@ div.sub-ul a:last-child {
     color: var(--color-white);
     background: var(--color-white-transparent);
 }
-.fuction-job-ul {
-    list-style: none;
-    display: grid;
-    padding-left: 20px;
-}
-.fuction-job-ul li {
-    font: normal normal 16px ShareTechMono;
-    color: var(--color-p);
-    padding: 2px 0px;
-}
-.fuction-job-ul li::before {
-    content: "▪";
-    color: var(--color-white);
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+.fuction-job-p p {
+    font-size: 14px;
+    max-width: 100%;
+    text-align: justify;
 }
 .job-experience-description-container {
     border: 1px solid var(--color-gray-dark);
@@ -391,6 +387,13 @@ div.sub-ul a:last-child {
 }
 .job {
     transition: opacity 300ms cubic-bezier(0.645,0.045,0.355,1);
+}
+.job h3 {
+    color: var(--color-white);
+}
+.job h4 {
+    margin: 10px 0px;
+    color: var(--color-grey);
 }
 .button-job {
     transition: border-color 300ms ease;
@@ -449,7 +452,6 @@ div.sub-ul a:last-child {
 }
 .contact-input-button {
     align-items: center;
-    width: 100%;
 }
 .contact-input-button input[type=submit] {
     width: 50%;
@@ -472,7 +474,7 @@ div.sub-ul a:last-child {
     color: var(--color-white);
 }
 .input-flex {
-    flex: 1 1 50%;
+    flex: 1 1 46%;
 }
 .contact-text {
     display: flex;
@@ -494,6 +496,8 @@ div.sub-ul a:last-child {
 .contact-input-container {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 
@@ -519,6 +523,17 @@ div.sub-ul a:last-child {
 .img-third-project {
     width: 11vw;
 }
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-container div {
+    height: 250px;
+    border: 1px solid #FFFFFF;
+    width: 200px;
+    border-radius: 20px;
+    margin: 5px;
+}
 
 @keyframes MoveUpDown {
     0%, 100% {
@@ -528,7 +543,7 @@ div.sub-ul a:last-child {
         bottom: 20px;
     }
 }
-@media screen and (max-width: 760px) {
+@media (max-width: 480px) {
     .nav-container {
         padding: 0px 5px;
     }
@@ -542,7 +557,7 @@ div.sub-ul a:last-child {
         grid-template-columns: repeat(2, minmax(140px, 200px));
     }
     .experience-info-container {
-        flex-direction: row;
+        flex-direction: column;
     }
     .job-experience-description-container {
         padding-left: 10px;
@@ -557,7 +572,7 @@ div.sub-ul a:last-child {
 
     .job-experience-description-container {
         margin: 0;
-        margin-left: 20px;
+        margin-top: 20px;
     }
     
     .job-experience-list button {
