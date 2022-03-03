@@ -12,11 +12,47 @@
 
 <body>
     <div class="root-container">
+        <div id="rigth-menu" class="menu-rigth">
+            <div class="button-toggle-close-container">
+                <button class="button-toggle-close" onclick="showHideMenu(false)">
+                    <img class="line-button-toggle-close" src="../assets/images/icons/close.svg">
+                </button>
+            </div>
+            <div class="section-container-menu-rigth">
+                <ul class="principal-ul">
+                    <li class="principal-li">
+                        <a class="principal-a" href="../index.html#about" onclick="showHideMenu(false)">Acerca de</a>
+                    </li>
+                    <li class="principal-li">
+                        <a class="principal-a" href="../index.html#experience" onclick="showHideMenu(false)">Experiencia</a>
+                    </li>
+                    <li class="principal-li sub-ul-container">
+                        <a class="principal-a" href="#projects">Proyectos</a>
+                        <div class="sub-ul sub-ul--all-width">
+                            <a href="../pages/proyecto_1.html">Proyecto 1</a>
+                            <a href="../pages/proyecto_2.html">Proyecto 2</a>
+                            <a href="../pages/proyecto_3.html">Proyecto 3</a>
+                            <a href="../pages/proyecto_4.html">Proyecto 4</a>
+                        </div>
+                    </li>
+                    <li class="principal-li">
+                        <a class="principal-a" href="#contact" onclick="showHideMenu(false)">Contacto</a>
+                    </li>
+                    <li class="principal-li">
+                        <a href="../assets/files/Curriculum Vitae.pdf" target="_blank" rel="noopener noreferrer"
+                            class="button-curriculum">CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="nav-container">
             <nav class="nav">
                 <div class="logo-container">
                     <a href="../index.html"><img src="../assets/images/logo.svg"></a>
                 </div>
+                <button class="button-toggle" onclick="showHideMenu(true)">
+                    <img class="line-button-toggle" src="../assets/images/icons/menu.svg">
+                </button>
                 <div class="section-container">
                     <ul class="principal-ul">
                         <li class="principal-li"><a class="principal-a" href="../index.html#about">Acerca de</a></li>
@@ -33,7 +69,7 @@
                         </li>
                         <li class="principal-li"><a class="principal-a" href="#contact">Contacto</a></li>
                         <li class="principal-li">
-                            <a href="./assets/files/Curriculum Vitae.pdf" target="_blank" rel="noopener noreferrer"
+                            <a href="../assets/files/Curriculum Vitae.pdf" target="_blank" rel="noopener noreferrer"
                                 class="button-curriculum">CV</a>
                         </li>
                     </ul>
@@ -74,8 +110,14 @@
         <div class="center-container">
             <main class="sections-container">
                 <section class="section">
-                    <div class="project-container">
-                        <div class="project-text">
+                    <div class="project-container project-container--inverted">
+                        <div class="project-media">
+                            <iframe class="iframe-youtube" src="https://www.youtube.com/embed/K1i3K4YAwmE"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="project-text project-text--ml-20">
                             <h1 class="project-title">Proyecto 2</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sint nisi explicabo
                                 accusamus quae a neque delectus quod nihil sed aspernatur facere id, quam ipsa sunt
@@ -85,19 +127,12 @@
                                 veniam.
                             </p>
                         </div>
-                        <div class="project-media">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/K1i3K4YAwmE"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
                     </div>
-                    <hr class="hr-all">
                 </section>
                 <section id="contact" class="section">
                     <div class="title-section-container">
+                        <hr class="hr-right" />
                         <h2 class="title-section">Contacto</h2>
-                        <hr>
                     </div>
                     <div class="contact-info-general-container">
                         <div class="contact-info-container">
@@ -109,27 +144,55 @@
                                 <div class="contact-input-container">
                                     <div class="input-group input-flex">
                                         <label class="label-form" for="name">Nombre</label>
-                                        <input id="name" type="text">
+                                        <input id="name" type="text" />
                                     </div>
                                     <div class="input-group input-flex">
                                         <label class="label-form" for="email">Correo</label>
-                                        <input id="email" type="text">
+                                        <input id="email" type="text" />
                                     </div>
                                 </div>
                                 <div class="input-group">
                                     <label class="label-form" for="message">Mensaje</label>
-                                    <textarea name="" id="message" cols="30" rows="10"></textarea>
+                                    <textarea name="" id="message" rows="10"></textarea>
                                 </div>
                                 <div class="input-group contact-input-button">
-                                    <input class="submit-button" type="submit">
+                                    <input class="submit-button" type="submit" />
                                 </div>
                             </form>
                         </div>
                     </div>
                 </section>
+                <div class="social-container">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/cotalora" target="_blank" rel="noopener noreferrer">
+                                <img src="../assets/images/icons/github.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/cristian-o-51a796127" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="../assets/images/icons/linkedin.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/cristianyesid.otalora" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="../assets/images/icons/facebook.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001696790"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="../assets/images/icons/world.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </main>
         </div>
     </div>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

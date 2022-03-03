@@ -12,11 +12,47 @@
 
 <body>
     <div class="root-container">
+        <div id="rigth-menu" class="menu-rigth">
+            <div class="button-toggle-close-container">
+                <button class="button-toggle-close" onclick="showHideMenu(false)">
+                    <img class="line-button-toggle-close" src="assets/images/icons/close.svg">
+                </button>
+            </div>
+            <div class="section-container-menu-rigth">
+                <ul class="principal-ul">
+                    <li class="principal-li">
+                        <a class="principal-a" href="#about" onclick="showHideMenu(false)">Acerca de</a>
+                    </li>
+                    <li class="principal-li">
+                        <a class="principal-a" href="#experience" onclick="showHideMenu(false)">Experiencia</a>
+                    </li>
+                    <li class="principal-li sub-ul-container">
+                        <a class="principal-a" href="#projects">Proyectos</a>
+                        <div class="sub-ul sub-ul--all-width">
+                            <a href="./pages/proyecto_1.html">Proyecto 1</a>
+                            <a href="./pages/proyecto_2.html">Proyecto 2</a>
+                            <a href="./pages/proyecto_3.html">Proyecto 3</a>
+                            <a href="./pages/proyecto_4.html">Proyecto 4</a>
+                        </div>
+                    </li>
+                    <li class="principal-li">
+                        <a class="principal-a" href="#contact" onclick="showHideMenu(false)">Contacto</a>
+                    </li>
+                    <li class="principal-li">
+                        <a href="./assets/files/Curriculum Vitae.pdf" target="_blank" rel="noopener noreferrer"
+                            class="button-curriculum">CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div class="nav-container">
             <nav class="nav">
                 <div class="logo-container">
                     <a href="./index.html"><img src="./assets/images/logo.svg" /></a>
                 </div>
+                <button class="button-toggle" onclick="showHideMenu(true)">
+                    <img class="line-button-toggle" src="assets/images/icons/menu.svg">
+                </button>
                 <div class="section-container">
                     <ul class="principal-ul">
                         <li class="principal-li">
@@ -101,7 +137,7 @@
                 <section id="about" class="section">
                     <div class="title-section-container">
                         <h2 class="title-section">Acerca de mi</h2>
-                        <hr class="hr-left"/>
+                        <hr class="hr-left" />
                     </div>
                     <div class="aboutme-info-container">
                         <div class="aboutme-text-ul">
@@ -147,13 +183,14 @@
                             </ul>
                         </div>
                         <div class="aboutme-image">
+                            <div class="background-me-img"></div>
                             <img src="./assets/images/me-image.jpg" alt="" />
                         </div>
                     </div>
                 </section>
                 <section id="experience" class="section">
                     <div class="title-section-container">
-                        <hr class="hr-right"/>
+                        <hr class="hr-right" />
                         <h2 class="title-section hr-ml-0-mr-20">Experiencia</h2>
                     </div>
                     <div class="experience-info-container">
@@ -233,7 +270,7 @@
                 <section id="projects" class="section">
                     <div class="title-section-container">
                         <h2 class="title-section">Proyectos</h2>
-                        <hr class="hr-left"/>
+                        <hr class="hr-left" />
                     </div>
                     <div class="projects-container">
                         <div></div>
@@ -244,7 +281,7 @@
                 </section>
                 <section id="contact" class="section">
                     <div class="title-section-container">
-                        <hr class="hr-right"/>
+                        <hr class="hr-right" />
                         <h2 class="title-section">Contacto</h2>
                     </div>
                     <div class="contact-info-general-container">
@@ -266,7 +303,7 @@
                                 </div>
                                 <div class="input-group">
                                     <label class="label-form" for="message">Mensaje</label>
-                                    <textarea name="" id="message" cols="30" rows="10"></textarea>
+                                    <textarea name="" id="message" rows="10"></textarea>
                                 </div>
                                 <div class="input-group contact-input-button">
                                     <input class="submit-button" type="submit" />
@@ -275,6 +312,33 @@
                         </div>
                     </div>
                 </section>
+                <div class="social-container">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/cotalora" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/icons/github.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/cristian-o-51a796127" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="./assets/images/icons/linkedin.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/cristianyesid.otalora" target="_blank"
+                                rel="noopener noreferrer">
+                                <img src="./assets/images/icons/facebook.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001696790"
+                                target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/images/icons/world.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="down-button-container-container">
                     <div class="down-button-container">
                         <button type="button">

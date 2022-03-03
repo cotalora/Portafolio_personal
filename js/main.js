@@ -2,7 +2,6 @@ function selectJob(event, jobName) {
     let element = document.getElementById(jobName);
     let jobSections = document.getElementsByClassName('job');
     let jobButtons = document.getElementsByClassName('button-job');
-    console.log(event);
     let button = event.currentTarget;
 
     // Ocultar/Mostrar sección de trabajo
@@ -24,4 +23,13 @@ function selectJob(event, jobName) {
         }
     }
     button.classList.add('button-job-selected');
+}
+
+function showHideMenu(show) {
+    if(show) {
+        document.getElementById('rigth-menu').style.right = "0%";
+    }
+    else {
+        document.getElementById('rigth-menu').style.right = "";
+    }
 }
