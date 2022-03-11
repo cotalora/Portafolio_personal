@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
     <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/x-icon">
-    <title>Proyecto 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Chatbot</title>
 </head>
 <body>
     <div class="root-container">
@@ -27,10 +29,10 @@
                     <li class="principal-li sub-ul-container">
                         <a class="principal-a" href="#projects">Proyectos</a>
                         <div class="sub-ul sub-ul--all-width">
-                            <a href="../pages/proyecto_1.html">Proyecto 1</a>
-                            <a href="../pages/proyecto_2.html">Proyecto 2</a>
-                            <a href="../pages/proyecto_3.html">Proyecto 3</a>
-                            <a href="../pages/proyecto_4.html">Proyecto 4</a>
+                            <a href="../pages/proyecto_1.html">Chemical Motion</a>
+                            <a href="../pages/proyecto_2.html">WeRecycle</a>
+                            <a href="../pages/proyecto_3.html">Chatbot</a>
+                            <a href="../pages/proyecto_4.html">BodyShield</a>
                         </div>
                     </li>
                     <li class="principal-li">
@@ -59,10 +61,10 @@
                         <li class="principal-li sub-ul-container">
                             <a class="principal-a" href="../index.html#projects">Proyectos</a>
                             <div class="sub-ul">
-                                <a href="../pages/proyecto_1.html">Proyecto 1</a>
-                                <a href="../pages/proyecto_2.html">Proyecto 2</a>
-                                <a href="../pages/proyecto_3.html">Proyecto 3</a>
-                                <a href="../pages/proyecto_4.html">Proyecto 4</a>
+                                <a href="../pages/proyecto_1.html">Chemical Motion</a>
+                                <a href="../pages/proyecto_2.html">WeRecycle</a>
+                                <a href="../pages/proyecto_3.html">Chatbot</a>
+                                <a href="../pages/proyecto_4.html">BodyShield</a>
                             </div>
                         </li>
                         <li class="principal-li"><a class="principal-a" href="#contact">Contacto</a></li>
@@ -110,7 +112,7 @@
                 <section class="section">
                     <div class="project-container">
                         <div class="project-text">
-                            <h1 class="project-title">Proyecto 3</h1>
+                            <h1 class="project-title">Chatbot</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sint nisi explicabo
                                 accusamus quae a neque delectus quod nihil sed aspernatur facere id, quam ipsa sunt
                                 ducimus sit aliquid quos libero assumenda molestias iste ullam ipsam. Odit culpa,
@@ -120,7 +122,47 @@
                             </p>
                         </div>
                         <div class="project-media">
-                            <img class="img-third-project" src="../assets/images/projects/Project_3/1.jpg" alt="WeRecycle">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../assets/images/projects/Project_3/1.png" class="d-block w-100"
+                                            alt="Chatbot">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/projects/Project_3/2.png" class="d-block w-100"
+                                            alt="Chatbot">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/projects/Project_3/3.png" class="d-block w-100"
+                                            alt="Chatbot">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../assets/images/projects/Project_3/4.png" class="d-block w-100"
+                                            alt="Chatbot">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -137,20 +179,20 @@
                             </div>
                             <form action="" class="contact-form">
                                 <div class="contact-input-container">
-                                    <div class="input-group input-flex">
+                                    <div class="input-group-g input-flex">
                                         <label class="label-form" for="name">Nombre</label>
                                         <input id="name" type="text" />
                                     </div>
-                                    <div class="input-group input-flex">
+                                    <div class="input-group-g input-flex">
                                         <label class="label-form" for="email">Correo</label>
                                         <input id="email" type="text" />
                                     </div>
                                 </div>
-                                <div class="input-group">
+                                <div class="input-group-g">
                                     <label class="label-form" for="message">Mensaje</label>
                                     <textarea name="" id="message" rows="10"></textarea>
                                 </div>
-                                <div class="input-group contact-input-button">
+                                <div class="input-group-g contact-input-button">
                                     <input class="submit-button" type="submit" />
                                 </div>
                             </form>
@@ -188,5 +230,8 @@
         </div>
     </div>
     <script src="../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 </html>
